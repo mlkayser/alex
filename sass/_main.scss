@@ -1,0 +1,221 @@
+*, *:before, *:after {
+  @include box-sizing(border-box);
+ }
+* {
+	margin:0;
+	padding:0;	
+} 
+html, body {margin:0; padding:0;	height:100%;}
+body {
+   display:table; 
+   width:100%;
+   background-image:url('images/plaster-texture.jpg');
+   background-color:white;
+   
+   @media screen and (min-width: 1024px) {
+      background-position:25% 0;
+   }
+}
+
+.wrapper {
+   padding:1em 1em;
+}
+header {
+   position:absolute; z-index:2;
+   width:100%; //min-height:100px; 
+   color:white;
+   background-color:rgba(0,0,0,.4); 
+}
+footer {
+   display:table-row; 
+   height:1px;
+   background-color:rgba(0,0,0,.7); 
+   color:white;
+}
+
+.navigation {
+   padding:1em;
+   overflow:hidden;
+   
+   li {
+      display:inline-block;
+      float:left;
+      
+   }
+   a {
+      display:block;
+      color:white;
+      text-decoration:none;
+      padding:0 2em;
+      text-align:center;
+      vertical-align:bottom;
+   }
+}
+.main {
+   //background-color:pink;
+   position:relative;
+   overflow:hidden;
+   //display:table;
+   
+   @media screen and (min-width: 1024px) {
+    
+       float:right;
+       width: 75%;
+  }
+}
+
+.slider {
+   position:relative;
+   //display:table-header-group;
+   padding-bottom:50%; //padding-bottom:56.25%;
+   overflow:hidden;
+   border-bottom:1px solid black;
+   background-color:black;
+   color:white;
+   
+   
+   iframe, img, li {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%; height:auto !important;     
+   }
+   .button {
+      position:absolute; bottom:20px; right:25%;
+      z-index:2;
+      color:white;
+   }
+}
+
+.intro {
+   overflow:hidden;
+   padding:1em;
+   background-color:white;
+   background-image:url('images/alex-3.jpg');
+   background-position:center bottom;
+   background-repeat:no-repeat;
+   @include box-shadow(0 -10px 10px black);
+   
+   h1 {
+      text-align:center;
+      margin-bottom:2em;
+      color:white;
+      @include text-shadow(0 0 10px #000000);
+      color:black;
+      @include text-shadow(0 0 10px #FFFFFF);
+      //font-family:cursive;
+   }
+   
+   img {
+      float:left;
+      margin-right:1em; margin-bottom:1em;
+      @include transition(all 0.3s ease-in-out);
+   }
+   img:hover {
+      @include transform(scale(1.3));
+   }
+   p {
+      clear:left; 
+      margin-bottom:2em;
+      background-color:rgba(255, 255, 255, .5);
+   }
+   
+   .decorazioni, .kustomite {
+      width:50%;
+      float:left;
+      //background-color:rgba(255, 255, 255, .5);
+   }
+   .decorazioni {
+      padding-right:20%;
+      h2, .button {color:#c64f49; font-weight:bold;}
+
+   }
+   .kustomite {
+      padding-left:20%;
+      h2, .button {color:#fd8654; font-weight:bold}
+   }
+}
+
+.tiles {
+   background-color:black;
+   overflow:hidden;
+   
+   ul {
+      width:100%;
+      margin:0; 
+      padding:0; 
+      list-style-type:none;
+      overflow:hidden;
+   }
+   li {
+      position:relative;
+      display:inline-block;
+      float:left;
+      width:50%; padding-bottom:50%;
+      //margin-right:1%; margin-bottom:1%;
+      background-color:grey;
+      overflow:hidden;
+   }
+   img {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width:auto;
+       height: 100%; 
+       @include transition(all 0.3s ease-in-out);
+   }
+   img.reverse {
+       height:auto;
+       width: 100%; 
+   }
+   .adjust {
+      margin-left:-50%;
+   }
+   li:hover {
+      img {@include transform(scale(1.3));}
+   }
+   .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding:1em;
+      margin:0;
+      background-color:rgba(0,0,0,.5);
+      color:white;
+      text-align:center;      
+   }
+   .description {
+      height:0;
+      overflow:hidden;
+   }
+   .caption:hover {
+      .description {
+         //height:auto;
+      }
+   }
+   h2 {
+      font-size:1em;
+      margin-bottom:0; 
+      //@include transition(all 0.3s ease-in-out);
+   }
+   @media screen and (max-width: 1023px) {
+     li {   
+         width:20%; padding-bottom:20%; 
+         margin:0;
+     }
+   }
+}
+
+footer {
+   text-align:center;
+   
+   .wrapper {padding:1em;}
+   p {margin:0;}
+   a {
+      color:white; 
+      font-size:2rem;
+      text-decoration:none;
+   }
+}

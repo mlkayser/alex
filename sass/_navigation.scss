@@ -1,0 +1,53 @@
+a {
+   color:#98AACF;
+}
+.button {
+   padding:.5em 2em;
+   margin-top:1em;
+   border:5px double #c64f49;
+   background-color:white;
+   color:#c64f49;
+   text-decoration:none;
+   font-family: 'Julius Sans One', sans-serif;
+   font-weight:bold;
+   text-transform:uppercase;
+   @include box-shadow(0 0 10px #000000); 
+   
+   &:hover {
+      @include box-shadow(none);
+   }
+}
+
+.navigation {
+   padding:1em;
+   overflow:hidden;
+   
+   li {
+      display:inline-block;
+      float:left;
+   }
+   li:first-child {
+      width:25%; height:100%;
+      background-image:url('images/alexlorenzi.gif');
+      background-size:contain;
+      background-repeat:no-repeat;
+      text-indent:-9999px; 
+      background-color:pink;
+   }
+   a {
+      display:block;
+      color:white;
+      text-decoration:none;
+      padding:0 2em;
+      text-align:center;
+      vertical-align:bottom;
+      font-family: 'Julius Sans One', sans-serif;
+   }
+   .home-link {
+      
+      img {
+         width:100%;
+         height:auto;
+      }
+   }
+}
