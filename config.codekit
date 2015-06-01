@@ -15,7 +15,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 20413,
+		"initialSize": 20202,
 		"inputAbbreviatedPath": "\/images\/alex-2.jpg",
 		"outputAbbreviatedPath": "\/images\/alex-2.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -132,13 +132,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/Mauritius.jpg": {
+	"\/images\/mauritius.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 61547,
-		"inputAbbreviatedPath": "\/images\/Mauritius.jpg",
-		"outputAbbreviatedPath": "\/images\/Mauritius.jpg",
+		"inputAbbreviatedPath": "\/images\/mauritius.jpg",
+		"outputAbbreviatedPath": "\/images\/mauritius.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -176,13 +176,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/Sansone.jpg": {
+	"\/images\/sansone.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 23602,
-		"inputAbbreviatedPath": "\/images\/Sansone.jpg",
-		"outputAbbreviatedPath": "\/images\/Sansone.jpg",
+		"inputAbbreviatedPath": "\/images\/sansone.jpg",
+		"outputAbbreviatedPath": "\/images\/sansone.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -198,6 +198,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/slides\/casco-don-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/slides\/casco-don-2.jpg",
+		"outputAbbreviatedPath": "\/images\/slides\/casco-don-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/slides\/casco-don.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/slides\/casco-don.jpg",
+		"outputAbbreviatedPath": "\/images\/slides\/casco-don.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/slides\/corsi.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -205,6 +227,28 @@
 		"initialSize": 52308,
 		"inputAbbreviatedPath": "\/images\/slides\/corsi.jpg",
 		"outputAbbreviatedPath": "\/images\/slides\/corsi.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/slides\/denim-rebel.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 117895,
+		"inputAbbreviatedPath": "\/images\/slides\/denim-rebel.jpg",
+		"outputAbbreviatedPath": "\/images\/slides\/denim-rebel.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/slides\/eagles.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/slides\/eagles.jpg",
+		"outputAbbreviatedPath": "\/images\/slides\/eagles.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -264,13 +308,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/testaGreca_small.jpg": {
+	"\/images\/testagreca_small.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 196129,
-		"inputAbbreviatedPath": "\/images\/testaGreca_small.jpg",
-		"outputAbbreviatedPath": "\/images\/testaGreca_small.jpg",
+		"inputAbbreviatedPath": "\/images\/testagreca_small.jpg",
+		"outputAbbreviatedPath": "\/images\/testagreca_small.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -283,6 +327,28 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/js\/main.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/main.js",
+		"outputAbbreviatedPath": "\/js\/min\/main-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/min\/main-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/main-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/main-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/sass\/_main.scss": {
 		"createSourceMap": 0,
@@ -341,6 +407,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/_typography.scss",
 		"outputAbbreviatedPath": "\/_typography.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/_variables.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/_variables.scss",
+		"outputAbbreviatedPath": "\/_variables.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

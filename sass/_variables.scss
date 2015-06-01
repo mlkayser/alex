@@ -1,0 +1,20 @@
+$footer-space: 5em;
+$large: 1240px;
+$medium: 1024px;
+$small: 600px;
+$link-color:#4F92BB; $link-color:#0593C7;
+
+// CLEARFIX
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */

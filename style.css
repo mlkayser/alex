@@ -361,11 +361,31 @@ td,
 th {
   padding: 0; }
 
+.clearfix:after, .navigation ul:after, header:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix, .navigation ul, header {
+  display: inline-block; }
+
+/* start commented backslash hack \*/
+* html .clearfix, * html .navigation ul, .navigation * html ul, * html header {
+  height: 1%; }
+
+.clearfix, .navigation ul, header {
+  display: block; }
+
+/* close commented backslash hack */
 html, body {
   font-family: 'Georgia', serif;
   font-family: 'Lora', serif;
   font-family: 'Gentium Basic', serif;
   font-family: 'Crimson Text', serif;
+  font-size: 18px;
   font-size: 16px;
   line-height: 1.4; }
 
@@ -393,60 +413,119 @@ p {
   margin: 0 0 1rem; }
 
 a {
-  color: #98AACF; }
+  color: #0593C7;
+  text-decoration: none; }
+  a:hover, a:focus {
+    text-decoration: underline; }
+  a h2:hover {
+    color: #0593C7; }
+
+p a {
+  font-weight: bold; }
+
+h1 a, h2 a {
+  color: inherit; }
+h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus {
+  color: #0593C7;
+  text-decoration: none; }
 
 .button {
   padding: .5em 2em;
   margin-top: 1em;
   border: 5px double #c64f49;
+  border: 2px solid #c64f49;
   background-color: white;
   color: #c64f49;
   text-decoration: none;
-  font-family: 'Julius Sans One', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   -moz-box-shadow: 0 0 10px #000000;
   -webkit-box-shadow: 0 0 10px #000000;
   box-shadow: 0 0 10px #000000; }
-  .button:hover {
+  .button:hover, .button:focus {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
-    box-shadow: none; }
+    box-shadow: none;
+    text-decoration: none !important; }
 
 .navigation {
   padding: 1em;
-  overflow: hidden; }
+  background-color: purple;
+  background-color: rgba(0, 0, 0, 0.3); }
+  .navigation ul {
+    margin: 0;
+    padding: 0; }
   .navigation li {
     display: inline-block;
-    float: left; }
-  .navigation li:first-child {
-    width: 25%;
-    height: 100%;
-    background-image: url("images/alexlorenzi.gif");
-    background-size: contain;
-    background-repeat: no-repeat;
-    text-indent: -9999px;
-    background-color: pink; }
+    float: left;
+    margin-left: 1px; }
   .navigation a {
     display: block;
+    height: 3.5em;
+    min-width: 4em;
+    padding: 2em 1em .5em;
     color: white;
     text-decoration: none;
-    padding: 0 2em;
     text-align: center;
     vertical-align: bottom;
     font-family: 'Julius Sans One', sans-serif; }
-  .navigation .home-link img {
-    width: 100%;
-    height: auto; }
+  .navigation a:hover, .navigation a:focus {
+    outline: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .navigation a.active {
+    color: #fd7854;
+    color: silver; }
+  .navigation li:hover {
+    position: relative; }
+    .navigation li:hover > a {
+      outline: 1px solid white; }
+    .navigation li:hover .submenu {
+      display: block; }
+  .navigation .submenu {
+    display: none;
+    margin: 0;
+    padding: 0; }
+    .navigation .submenu li {
+      display: block;
+      float: none;
+      padding: 0;
+      margin: 0; }
+    .navigation .submenu a {
+      text-align: left;
+      padding-top: .5em;
+      height: auto;
+      width: auto;
+      white-space: nowrap; }
+  .navigation .home-link a {
+    width: 10em;
+    outline: 1px solid white;
+    background-image: url("images/alexlorenzi.gif");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center 70%;
+    text-indent: -9999px; }
+  .navigation .decorazioni-link {
+    width: 14em; }
+    .navigation .decorazioni-link > a {
+      background-image: url("images/testaGreca_small.jpg");
+      background-size: 30px 25px;
+      background-repeat: no-repeat;
+      background-position: center .5em; }
+  .navigation .kustomite-link {
+    width: 12em;
+    width: 8em; }
+    .navigation .kustomite-link > a {
+      background-image: url("images/kustomite_small.jpg");
+      background-size: 30px 25px;
+      background-repeat: no-repeat;
+      background-position: center .5em; }
+    .navigation .kustomite-link .submenu {
+      width: 150%; }
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-
-* {
-  margin: 0;
-  padding: 0; }
 
 html, body {
   margin: 0;
@@ -456,14 +535,17 @@ html, body {
 body {
   display: table;
   width: 100%;
-  background-image: url("images/plaster-texture.jpg");
-  background-color: white; }
-  @media screen and (min-width: 1024px) {
-    body {
-      background-position: 25% 0; } }
+  background-color: black; }
+
+.page-wrapper {
+  margin-bottom: 5em; }
 
 .wrapper {
   padding: 1em 1em; }
+
+section {
+  margin: 0;
+  padding: 0; }
 
 header {
   position: absolute;
@@ -472,30 +554,10 @@ header {
   color: white;
   background-color: rgba(0, 0, 0, 0.4); }
 
-footer {
-  display: table-row;
-  height: 1px;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white; }
-
-.navigation {
-  padding: 1em;
-  overflow: hidden; }
-  .navigation li {
-    display: inline-block;
-    float: left; }
-  .navigation a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 0 2em;
-    text-align: center;
-    vertical-align: bottom; }
-
 .main {
   position: relative;
   overflow: hidden; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1240px) {
     .main {
       float: right;
       width: 75%; } }
@@ -505,32 +567,40 @@ footer {
   padding-bottom: 50%;
   overflow: hidden;
   border-bottom: 1px solid black;
-  background-color: black;
-  color: white; }
-  .slider iframe, .slider img, .slider li {
+  background-color: black; }
+  .slider ul {
+    margin: 0;
+    padding: 0; }
+  .slider li {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    margin: 0;
+    padding-bottom: 50%; }
+  .slider img {
+    position: absolute;
+    width: 100%;
     height: auto !important; }
   .slider .button {
+    display: inline-block;
     position: absolute;
-    bottom: 20px;
-    right: 25%;
-    z-index: 2;
-    color: white; }
+    bottom: 10%;
+    right: 20%; }
 
 .intro {
   overflow: hidden;
-  padding: 1em;
+  padding-top: 1em;
   background-color: white;
-  background-image: url("images/alex-3.jpg");
+  background-image: url("images/alex-2.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   -moz-box-shadow: 0 -10px 10px black;
   -webkit-box-shadow: 0 -10px 10px black;
   box-shadow: 0 -10px 10px black; }
+  @media screen and (min-width: 1240px) {
+    .intro {
+      margin-bottom: 5em; } }
   .intro h1 {
     text-align: center;
     margin-bottom: 2em;
@@ -553,7 +623,8 @@ footer {
     transform: scale(1.3); }
   .intro p {
     clear: left;
-    margin-bottom: 2em;
+    margin-bottom: 2em; }
+  .intro p:first-child {
     background-color: rgba(255, 255, 255, 0.5); }
   .intro .decorazioni, .intro .kustomite {
     width: 50%;
@@ -570,14 +641,20 @@ footer {
       font-weight: bold; }
 
 .tiles {
-  background-color: black;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 5em; }
+  @media screen and (min-width: 1240px) {
+    .tiles {
+      height: 100vh;
+      overflow-y: scroll;
+      margin-bottom: 5em; } }
   .tiles ul {
     width: 100%;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative; }
   .tiles li {
     position: relative;
     display: inline-block;
@@ -622,19 +699,37 @@ footer {
   .tiles h2 {
     font-size: 1em;
     margin-bottom: 0; }
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1240px) {
     .tiles li {
       width: 20%;
       padding-bottom: 20%;
       margin: 0; } }
 
 footer {
+  /*display:table-row; 
+  height:1px; */
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
   text-align: center; }
+  @media screen and (min-width: 1240px) {
+    footer {
+      width: 100%; } }
   footer .wrapper {
     padding: 1em; }
   footer p {
     margin: 0; }
   footer a {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-decoration: none; }
+    footer a:hover, footer a:focus {
+      color: #0593C7;
+      text-decoration: none; }
+  footer span {
+    display: inline-block;
+    width: 1em; }
