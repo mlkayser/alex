@@ -13,39 +13,39 @@ html, body {
 body {
    display:table; 
    width:100%;
-   //background-image:url('images/plaster-texture.jpg');
    background-color:black;
+   background-image:url('images/plaster-texture.jpg');
    
    @media screen and (min-width: $large) {
       //background-position:25% 0;
    }
 }
 .page-wrapper {
-   margin-bottom:$footer-space;
+   margin-top:$header-space;
+   
+   &.home {
+      margin-top:0;
+   }
 }
 .wrapper {
    padding:1em 1em;
 }
+
 section {margin:0; padding:0;}
+
 header {
-   position:absolute; z-index:2;
+   z-index:2;
+   position:absolute; 
+   right:0; top:0;    
    width:100%; //min-height:100px; 
    //padding-bottom:1rem;
    color:white;
    background-color:rgba(0,0,0,.4); 
    @extend .clearfix;
-}
-
-.main {
-   //background-color:pink;
-   position:relative;
-   overflow:hidden;
-   //display:table;
    
    @media screen and (min-width: $large) {
-       float:right;
-       width: 75%;
-  }
+      width:75%
+   }
 }
 
 .slider {
@@ -132,17 +132,41 @@ header {
    }
 }
 
+.aside {
+    @media screen and (min-width: $large) {      
+      min-height:100vh;
+      background-color:black;
+       
+      &.left {
+         float:left;
+         width:25%;
+         height:100vh;
+         overflow-y:scroll;
+         margin-top:-$header-space;
+      }
+      &.right {
+         float:right;
+         width:75%;
+      }
+   }      
+}
+
+.description {
+   color:white; 
+   padding:2em;
+}
+
 .tiles {
-   //background-image:url('images/plaster-texture.jpg');
-   overflow:hidden;
    margin-bottom:$footer-space;
    
    @media screen and (min-width: $large) {
-      height:100vh; 
+      width:25%;
+      //max-height:100vh; 
       overflow-y:scroll;
       margin-bottom:$footer-space;
-   }   
-
+      background-color:black;
+   }
+   
    ul {
       width:100%;
       margin:0; 
@@ -211,6 +235,13 @@ header {
    }
 }
 
+.thumbs {
+   img {
+      min-width:150px;
+      max-width:200px;
+      height:auto !important;
+   }
+}
 footer {   
    /*display:table-row; 
    height:1px; */
@@ -225,7 +256,7 @@ footer {
    //font-family: 'Julius Sans One', sans-serif;
 
    @media screen and (min-width: $large) {
-      width:100%;
+      width:75%;
    }
       
    .wrapper {padding:1em;}

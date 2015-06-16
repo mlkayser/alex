@@ -382,11 +382,7 @@ th {
 /* close commented backslash hack */
 html, body {
   font-family: 'Georgia', serif;
-  font-family: 'Lora', serif;
-  font-family: 'Gentium Basic', serif;
-  font-family: 'Crimson Text', serif;
   font-size: 18px;
-  font-size: 16px;
   line-height: 1.4; }
 
 h1, h2 {
@@ -535,10 +531,13 @@ html, body {
 body {
   display: table;
   width: 100%;
-  background-color: black; }
+  background-color: black;
+  background-image: url("images/plaster-texture.jpg"); }
 
 .page-wrapper {
-  margin-bottom: 5em; }
+  margin-top: 100px; }
+  .page-wrapper.home {
+    margin-top: 0; }
 
 .wrapper {
   padding: 1em 1em; }
@@ -548,18 +547,15 @@ section {
   padding: 0; }
 
 header {
-  position: absolute;
   z-index: 2;
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 100%;
   color: white;
   background-color: rgba(0, 0, 0, 0.4); }
-
-.main {
-  position: relative;
-  overflow: hidden; }
   @media screen and (min-width: 1240px) {
-    .main {
-      float: right;
+    header {
       width: 75%; } }
 
 .slider {
@@ -600,7 +596,7 @@ header {
   box-shadow: 0 -10px 10px black; }
   @media screen and (min-width: 1240px) {
     .intro {
-      margin-bottom: 5em; } }
+      margin-bottom: 4em; } }
   .intro h1 {
     text-align: center;
     margin-bottom: 2em;
@@ -640,14 +636,32 @@ header {
       color: #fd8654;
       font-weight: bold; }
 
-.tiles {
-  overflow: hidden;
-  margin-bottom: 5em; }
-  @media screen and (min-width: 1240px) {
-    .tiles {
+@media screen and (min-width: 1240px) {
+  .aside {
+    min-height: 100vh;
+    background-color: black; }
+    .aside.left {
+      float: left;
+      width: 25%;
       height: 100vh;
       overflow-y: scroll;
-      margin-bottom: 5em; } }
+      margin-top: -100px; }
+    .aside.right {
+      float: right;
+      width: 75%; } }
+
+.description {
+  color: white;
+  padding: 2em; }
+
+.tiles {
+  margin-bottom: 4em; }
+  @media screen and (min-width: 1240px) {
+    .tiles {
+      width: 25%;
+      overflow-y: scroll;
+      margin-bottom: 4em;
+      background-color: black; } }
   .tiles ul {
     width: 100%;
     margin: 0;
@@ -705,6 +719,11 @@ header {
       padding-bottom: 20%;
       margin: 0; } }
 
+.thumbs img {
+  min-width: 150px;
+  max-width: 200px;
+  height: auto !important; }
+
 footer {
   /*display:table-row; 
   height:1px; */
@@ -718,7 +737,7 @@ footer {
   text-align: center; }
   @media screen and (min-width: 1240px) {
     footer {
-      width: 100%; } }
+      width: 75%; } }
   footer .wrapper {
     padding: 1em; }
   footer p {
