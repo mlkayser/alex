@@ -2,68 +2,73 @@
 
 <div class="page-wrapper home">
    <div class="aside right">
-         <section id="slider" class="slider">
-            <ul>
-               <li class="slide">
-                  <img src="images/slides/mauritius.jpg" alt="Mauritius, Elba - Trompe L'Oeil dipinto a mano" />
-                  <a href="" class="button">Trompe L'oeil</a>
-               </li>
-               <li class="slide">
-                  <img src="images/slides/sansone.jpg" alt="Spiaggia di Sansone, Elba - Murales dipinto a mano" />
-                  <a href="" class="button">Murales</a>
-               </li>
-               <li class="slide">
-                  <img src="images/slides/bacco.jpg" alt="Bacco, Elba - Affresco" />
-                  <a href="" class="button">Affreschi</a>
-               </li>
-               <li class="slide">
-                  <img src="images/slides/portico-deco.jpg" alt="Portico Deco, Elba - Ornamento" />
-                  <a href="" class="button">Ornamenti</a>
-               </li>
-               <li class="slide">
-                  <img src="images/slides/samantha-and-spirit.jpg" alt="Samantha & Spirit- Dipinto su Commissione" />
-                  <a href="" class="button">Dipinti</a>
-               </li>
-               <li class="slide">
-                  <img src="images/slides/mobile-pappagalli.jpg" alt="Pappagalli - Decorazioni su Mobili" />
-                  <a href="" class="button">Decorazioni su Mobili</a>
-               </li>
-               <li class="slide">
-                  <img src="images/slides/denim-rebel.jpg" alt="Harley Davidson Denim Rebel- Aerogfafie su Auto e Moto" />
-                  <a href="" class="button">Aerografie su Auto e Moto</a>
-               </li>
-               <li class="slide">
-                  <img src="images/slides/casco-don.jpg" alt="Casco Don Alberto - Aerografie su Caschi" />
-                  <a href="" class="button">Aerografie su Caschi</a>
-               </li>
-               <li class="slide">
-                  <img src="images/slides/eagles.jpg" alt="Eagles - Aerografie su Giubbotti e Tshirts" />
-                  <a href="" class="button">Aerografie su Giubbotti e Tshirts</a>
-               </li>
-              <li class="slide">
-                  <img src="images/slides/corsi.jpg" alt="Corsi di Aerografo" />
-                  <a href="" class="button">Corsi di Aerografo</a>
-               </li>
-            </ul>
-         </section>
-         <section id="intro" class="intro">
-            <div class="wrapper">
-               <h1><a href="">Un artista, due linguaggi</a></h1>
-               <div id="decorazioni" class="decorazioni">
-                  <a href=""><img src="images/testaGreca_small.jpg" width="80" /></a>
-                  <h2><a href="">Decorazioni e Dipinti</a></h2>
-                  <p>Come pittore, mentre realizzo <a href="">affreschi</a>, <a href="">murales</a>, <a href="">trompe l’oeil</a> e <a href="">dipinti</a>, sento intensamente l'influenza della cultura italiana e la mia parte artistica e’ piu’ rivolta ad un atteggiamento classico.</p>
-                  <p><a href="" class="button">Esplora</a></p>
-               </div>
-               <div id="kustomite" class="kustomite">
-                  <a href=""><img src="images/kustomite_small.jpg" width="80" /></a>
-                  <h2><a href="">Kustomite</a></h2>
-                  <p>Come aerografista, l’influenza americana predomina. Mentre realizzo aerografie su <a href="">carrozzerie</a>, <a href="">caschi</a> e <a href="">giubbotti</a>, il pittore in me diventa un “trasformatore” che con la sua creativita’ tramuta quei singoli oggetti “comuni” in oggetti “originali ed unici: in una sola parola …kustom!</p>
-                  <p><a href="" class="button">Esplora</a></p>
-               </div>
+      
+      <section id="slider" class="slider">
+        <ul>
+            <li class="slide">
+               <img src="images/slides/mauritius.jpg" alt="Mauritius, Elba - Trompe L'Oeil dipinto a mano" />
+               <a href="" class="button">Trompe L'oeil</a>
+            </li>
+            <li class="slide">
+               <img src="images/slides/sansone.jpg" alt="Spiaggia di Sansone, Elba - Murales dipinto a mano" />
+               <a href="" class="button">Murales</a>
+            </li>
+            <li class="slide">
+               <img src="images/slides/bacco.jpg" alt="Bacco, Elba - Affresco" />
+               <a href="" class="button">Affreschi</a>
+            </li>
+            <li class="slide">
+               <img src="images/slides/portico-deco.jpg" alt="Portico Deco, Elba - Ornamento" />
+               <a href="" class="button">Ornamenti</a>
+            </li>
+            <li class="slide">
+               <img src="images/slides/samantha-and-spirit.jpg" alt="Samantha & Spirit- Dipinto su Commissione" />
+               <a href="" class="button">Dipinti</a>
+            </li>
+            <li class="slide">
+               <img src="images/slides/mobile-pappagalli.jpg" alt="Pappagalli - Decorazioni su Mobili" />
+               <a href="" class="button">Decorazioni su Mobili</a>
+            </li>
+            <li class="slide">
+               <img src="images/slides/denim-rebel.jpg" alt="Harley Davidson Denim Rebel- Aerogfafie su Auto e Moto" />
+               <a href="" class="button">Aerografie su Auto e Moto</a>
+            </li>
+            <li class="slide">
+               <img src="images/slides/casco-don.jpg" alt="Casco Don Alberto - Aerografie su Caschi" />
+               <a href="" class="button">Aerografie su Caschi</a>
+            </li>
+            <li class="slide">
+               <img src="images/slides/eagles.jpg" alt="Eagles - Aerografie su Giubbotti e Tshirts" />
+               <a href="" class="button">Aerografie su Giubbotti e Tshirts</a>
+            </li>
+           <li class="slide">
+               <img src="images/slides/corsi.jpg" alt="Corsi di Aerografo" />
+               <a href="" class="button">Corsi di Aerografo</a>
+            </li>
+         </ul>
+         
+      </section>
+      
+      <section id="intro" class="intro">
+         <div class="wrapper">
+            <h1><a href="">Un artista, due linguaggi</a></h1>
+            <div id="decorazioni" class="decorazioni">
+               <a href=""><img src="images/testaGreca_small.jpg" width="80" /></a>
+               <h2><a href="">Decorazioni e Dipinti</a></h2>
+               <p>Come pittore, mentre realizzo <a href="">affreschi</a>, <a href="">murales</a>, <a href="">trompe l’oeil</a> e <a href="">dipinti</a>, sento intensamente l'influenza della cultura italiana e la mia parte artistica e’ piu’ rivolta ad un atteggiamento classico.</p>
+               <p><a href="" class="button">Esplora</a></p>
             </div>
-         </section>   
-      </div>
+            <div id="kustomite" class="kustomite">
+               <a href=""><img src="images/kustomite_small.jpg" width="80" /></a>
+               <h2><a href="">Kustomite</a></h2>
+               <p>Come aerografista, l’influenza americana predomina. Mentre realizzo aerografie su <a href="">carrozzerie</a>, <a href="">caschi</a> e <a href="">giubbotti</a>, il pittore in me diventa un “trasformatore” che con la sua creativita’ tramuta quei singoli oggetti “comuni” in oggetti “originali ed unici: in una sola parola …kustom!</p>
+               <p><a href="" class="button">Esplora</a></p>
+            </div>
+         </div>
+      </section>   
+
+   </div>
+      
    <section id="tiles" class="tiles">
          <ul>
             <li>

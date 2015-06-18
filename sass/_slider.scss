@@ -1,0 +1,71 @@
+/* ---- previous/next buttons ---- */
+
+.slider-control {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  background: hsla(0, 0%, 100%, 0.75);
+  cursor: pointer;
+  /* vertically center */
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          
+   color:grey;
+  font-size:20px;
+  text-align:center;
+  line-height:44px;
+  font-weight:bold;
+}
+
+.slider-control:hover { background: white; }
+
+.slider-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #09F;
+}
+
+.slider-control:active {
+  filter: alpha(opacity=60); /* IE8 */
+  opacity: 0.6;
+}
+
+.slider-control.previous { left: 10px; }
+.slider-control.next { right: 10px; }
+/* right to left */
+.slider-rtl .slider-control.previous {
+  left: auto;
+  right: 10px;
+}
+.slider-rtl .slider-control.next {
+  right: auto;
+  left: 10px;
+}
+
+.slider-control:disabled {
+  filter: alpha(opacity=30); /* IE8 */
+  opacity: 0.3;
+  cursor: auto;
+}
+
+.slider-control svg {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+.slider-control .arrow {
+  fill: #333;
+}
+
+/* color & size if no SVG - IE8 and Android 2.3 */
+.slider-control.no-svg {
+  color: #333;
+  font-size: 26px;
+}

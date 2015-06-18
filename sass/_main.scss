@@ -22,13 +22,14 @@ body {
 }
 .page-wrapper {
    margin-top:$header-space;
+   margin-bottom:$footer-space;
    
    &.home {
       margin-top:0;
    }
 }
 .wrapper {
-   padding:1em 1em;
+   padding:$spacing $spacing*2 $spacing;
 }
 
 section {margin:0; padding:0;}
@@ -40,11 +41,15 @@ header {
    width:100%; //min-height:100px; 
    //padding-bottom:1rem;
    color:white;
-   background-color:rgba(0,0,0,.4); 
+   //background-color:rgba(0,0,0,.4); 
    @extend .clearfix;
    
    @media screen and (min-width: $large) {
       width:75%
+   }
+   @media screen and (max-width: $small) {
+      position:relative;
+      min-height:3em;      
    }
 }
 
@@ -55,6 +60,7 @@ header {
    overflow:hidden;
    border-bottom:1px solid black;
    background-color:black;
+   //visibility:hidden;
    
    ul {
        margin:0;  padding:0; 
@@ -75,20 +81,27 @@ header {
       display:inline-block;
       position:absolute; 
       bottom:10%; right:20%;
+      
+      @media screen and (max-width: $small) {
+         bottom:15%; right:15%;
+      }
    }
 }
 
 .intro {
    overflow:hidden;
-   padding-top:1em;
+   padding-top:$spacing;
    background-color:white;
    background-image:url('images/alex-2.jpg');
    background-position:center bottom;
    background-repeat:no-repeat;
-   @include box-shadow(0 -10px 10px black);
+   //@include box-shadow(0 -10px 10px black);
 
    @media screen and (min-width: $large) {
       margin-bottom:$footer-space;
+   }
+   @media screen and (max-width: $small) {
+      background-position:center top;      
    }
    
    h1 {
@@ -99,6 +112,11 @@ header {
       color:black;
       @include text-shadow(0 0 10px #FFFFFF);
       //font-family:cursive;
+      
+       @media screen and (max-width: $small) {
+          height:450px;
+          margin-bottom:0;
+       }
    }
    
    img {
@@ -119,7 +137,14 @@ header {
    .decorazioni, .kustomite {
       width:50%;
       float:left;
-      //background-color:rgba(255, 255, 255, .5);
+      
+      @media screen and (max-width: $small) {
+         width:100%;
+         float:none;
+         padding:0 !important;         
+         margin-bottom:$spacing;
+         overflow:hidden;
+      }
    }
    .decorazioni {
       padding-right:20%;
@@ -153,7 +178,6 @@ header {
 
 .description {
    color:white; 
-   padding:2em;
 }
 
 .tiles {
@@ -236,10 +260,13 @@ header {
 }
 
 .thumbs {
+   //text-align:center;
+   
    img {
       min-width:150px;
       max-width:200px;
       height:auto !important;
+      width:auto !important;
    }
 }
 footer {   

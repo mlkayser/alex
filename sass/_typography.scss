@@ -1,10 +1,14 @@
 html, body {
-   font-family: 'Georgia', serif;   
+   font-family: 'Palatino', 'Georgia', serif;   
    //font-family: 'Lora', serif;
    //font-family: 'Gentium Basic', serif;
    //font-family: 'Crimson Text', serif;
    font-size:18px;
    line-height:1.4;
+   
+    @media screen and (max-width: $small) {
+       font-size:16px;
+    }
 }
 
 h1, h2 {

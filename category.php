@@ -1,12 +1,16 @@
 <?php require('header.php'); ?>
 
 <div class="page-wrapper">
-	<section id="description" class="aside left description">							
-		<h1>Murales</h1>				 	
-		<p>Eseguo murales applicati direttamente su muro di interni ed esterni con colori a base d'acqua, resistenti alla luce ed alle intemperie. Le decorazioni vengono protette con un trasparente opaco finale che rende lavabili le superfici. Questa tecnica e' adatta a personalizzare ed abbellire ambienti di ogni dimensione. Lavoro in tutta la Lombardia e specialmente a Bergamo, Milano e Brescia.</p>
-		 <p>Contattami per avere piú informazioni: <a href="mailto:alex@alexlorenzi.com">alex@alexlorenzi.com</a> | 348.6700.922</p>
-		 <p><img src="images/testaGreca_small.jpg" alt="Logo decorazioni e dipinti" style="width:75px; height:auto;">	Decorazioni e Dipinti</p>
+   
+	<section id="description" class="aside left description">		
+   	<div class="wrapper">					
+   		<h1>Murales</h1>				 	
+   		<p>Eseguo murales applicati direttamente su muro di interni ed esterni con colori a base d'acqua, resistenti alla luce ed alle intemperie. Le decorazioni vengono protette con un trasparente opaco finale che rende lavabili le superfici. Questa tecnica e' adatta a personalizzare ed abbellire ambienti di ogni dimensione. Lavoro in tutta la Lombardia e specialmente a Bergamo, Milano e Brescia.</p>
+   		 <p>Contattami per avere piú informazioni: <a href="mailto:alex@alexlorenzi.com">alex@alexlorenzi.com</a> | 348.6700.922</p>
+   		 <p><img src="images/testaGreca_small.jpg" alt="Logo decorazioni e dipinti" style="width:75px; height:auto;">	Decorazioni e Dipinti</p>
+   	</div>
    </section>
+   
    <div class="thumbs"> 
 	 	<div id="content" class="content">	
 			<!--h1>Murales</h1>					

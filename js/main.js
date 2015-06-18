@@ -34,7 +34,10 @@ $(document).ready(function(){
     });
 
 	//---------------------- SLIDER --------------------------------//	
-	function slider(direction) {   
+	var buttons = '<div class="slider-control previous">&lt;</div><div class="slider-control next">&gt;</div>';
+	$(buttons).appendTo('.slider');
+	
+	function slide(direction) {   
 	
 		// current slide
       var $currentSlide = $('.slider li:visible');
@@ -70,8 +73,14 @@ $(document).ready(function(){
 	$currentSlide.css('background-image','url(' + url + ')');
 	
 	// call the slider
-	setInterval(slider, 8000);
-	$('.slider .slide-control-right').click(function() { slider(); });
-	$('.slider .slide-control-left').click( function() { slider('back'); });
+	var rotate = setInterval(slide, 8000);
+	$('.slider-control.next').click(function() { 
+   	clearInterval(rotate);
+   	slide();
+   });
+	$('.slider-control.previous').click( function() { 
+   	clearInterval(rotate);
+   	slide('back');
+   });
 
 });

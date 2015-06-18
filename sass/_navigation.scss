@@ -38,12 +38,26 @@ h1, h2 {
 
 .navigation {
    padding:1em;
-   background-color:purple; background-color:rgba(black,.3);
-      
+   background-color:rgba(black,.3);
+   
+   @media screen and (max-width: $small) {
+      //display:none;
+   }
+
+   
+   @media screen and (max-width: 850px) {
+      font-size:.8em;
+   }   
+   
    ul {
       margin:0; //margin:0 1em;
       padding:0;    
       @extend .clearfix; 
+         
+      @media screen and (max-width: $small) {
+         display:none;
+      }
+
    }
    li {
       display:inline-block;
@@ -107,6 +121,7 @@ h1, h2 {
          background-repeat:no-repeat;
          background-position:center 70%;
          text-indent:-9999px; 
+         //background-color:rgba(black,.3); 
       }
    }
    .decorazioni-link {      
