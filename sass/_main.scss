@@ -27,9 +27,15 @@ body {
    &.home {
       margin-top:0;
    }
+   @media screen and (max-width: $small) {
+      margin-bottom:$footer-space-mobile;
+   }
 }
 .wrapper {
    padding:$spacing $spacing*2 $spacing;
+   @media screen and (max-width: $small) {
+      padding:$spacing;
+   }
 }
 
 section {margin:0; padding:0;}
@@ -81,9 +87,16 @@ header {
       display:inline-block;
       position:absolute; 
       bottom:10%; right:20%;
+      white-space:nowrap;
       
       @media screen and (max-width: $small) {
-         bottom:15%; right:15%;
+         bottom:15%; right:50%;
+         font-size:.9em;
+         
+         /* horizontally center */
+        -webkit-transform: translateX(50%);
+            -ms-transform: translateX(50%);
+                transform: translateX(50%);
       }
    }
 }
@@ -92,7 +105,7 @@ header {
    overflow:hidden;
    padding-top:$spacing;
    background-color:white;
-   background-image:url('images/alex-2.jpg');
+   background-image:url('images/alex.jpg');
    background-position:center bottom;
    background-repeat:no-repeat;
    //@include box-shadow(0 -10px 10px black);
@@ -101,6 +114,7 @@ header {
       margin-bottom:$footer-space;
    }
    @media screen and (max-width: $small) {
+      background-image:url('images/alex-small.jpg');
       background-position:center top;      
    }
    
@@ -114,7 +128,7 @@ header {
       //font-family:cursive;
       
        @media screen and (max-width: $small) {
-          height:450px;
+          height:330px;
           margin-bottom:0;
        }
    }
@@ -257,6 +271,12 @@ header {
          margin:0;
      }
    }
+   @media screen and (max-width: $small) {
+     li {   
+         width:50%; padding-bottom:50%; 
+         margin:0;
+     }
+   }
 }
 
 .thumbs {
@@ -269,6 +289,7 @@ header {
       width:auto !important;
    }
 }
+
 footer {   
    /*display:table-row; 
    height:1px; */

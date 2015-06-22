@@ -52,13 +52,7 @@ $(document).ready(function(){
 			$next = $currentSlide.prev('.slide');
 			if(!$next.length){ $next = $('.slider .slide:last-child'); }		
 		}
-		
-		// hide the <img> and make it a background image	
-		//$next.find('img').css('display','none');		
-		//var url = $next.find('img').attr('src');
-		//$next.css('background-image','url(' + url + ')');
-		//console.log($url);
-		
+				
 		// show the slide
 		$next.fadeIn();
 	}
@@ -73,14 +67,16 @@ $(document).ready(function(){
 	$currentSlide.css('background-image','url(' + url + ')');
 	
 	// call the slider
-	var rotate = setInterval(slide, 8000);
+	var rotate = setInterval(slide, 7000);
 	$('.slider-control.next').click(function() { 
-   	clearInterval(rotate);
+   	clearInterval(rotate); 
    	slide();
+   	rotate = setInterval(slide, 7000);
    });
 	$('.slider-control.previous').click( function() { 
    	clearInterval(rotate);
    	slide('back');
+   	rotate = setInterval(slide, 7000);
    });
 
 });

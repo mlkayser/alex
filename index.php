@@ -7,7 +7,7 @@
         <ul>
             <li class="slide">
                <img src="images/slides/mauritius.jpg" alt="Mauritius, Elba - Trompe L'Oeil dipinto a mano" />
-               <a href="" class="button">Trompe L'oeil</a>
+               <a href="" class="button">Trompe L'Oeil</a>
             </li>
             <li class="slide">
                <img src="images/slides/sansone.jpg" alt="Spiaggia di Sansone, Elba - Murales dipinto a mano" />
