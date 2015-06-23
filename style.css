@@ -411,6 +411,19 @@ p {
   font-size: 1rem;
   margin: 0 0 1rem; }
 
+.post img, .page img {
+  border: 1px solid grey; }
+
+.alignright {
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px; }
+
+.alignleft {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+
 a {
   color: #0593C7;
   text-decoration: none; }
@@ -432,24 +445,20 @@ h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus {
   padding: .5em 2em;
   margin-top: 1em;
   border: 5px double #c64f49;
-  border: 2px solid #c64f49;
+  border: 1px solid #0593C7;
   background-color: white;
-  color: #c64f49;
+  color: #0593C7;
   text-decoration: none;
   font-weight: bold;
-  text-transform: uppercase;
-  -moz-box-shadow: 0 0 10px #000000;
-  -webkit-box-shadow: 0 0 10px #000000;
-  box-shadow: 0 0 10px #000000; }
+  text-transform: uppercase; }
   .button:hover, .button:focus {
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    text-decoration: none !important; }
+    text-decoration: none !important;
+    background-color: #0593C7;
+    color: white; }
 
 .navigation {
   padding: 1em;
-  background-color: rgba(0, 0, 0, 0.3); }
+  background-color: rgba(0, 0, 0, 0.8); }
   @media screen and (max-width: 850px) {
     .navigation {
       font-size: .8em; } }
@@ -547,9 +556,15 @@ body {
   margin-bottom: 4em; }
   .page-wrapper.home {
     margin-top: 0; }
+  @media screen and (max-width: 700px) {
+    .page-wrapper {
+      margin-bottom: 6em; } }
 
 .wrapper {
   padding: 20px 40px 20px; }
+  @media screen and (max-width: 700px) {
+    .wrapper {
+      padding: 20px; } }
 
 section {
   margin: 0;
@@ -594,17 +609,23 @@ header {
     display: inline-block;
     position: absolute;
     bottom: 10%;
-    right: 20%; }
+    right: 20%;
+    white-space: nowrap; }
     @media screen and (max-width: 700px) {
       .slider .button {
         bottom: 15%;
-        right: 15%; } }
+        right: 50%;
+        font-size: .9em;
+        /* horizontally center */
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%); } }
 
 .intro {
   overflow: hidden;
   padding-top: 20px;
   background-color: white;
-  background-image: url("images/alex-2.jpg");
+  background-image: url("images/alex.jpg");
   background-position: center bottom;
   background-repeat: no-repeat; }
   @media screen and (min-width: 1240px) {
@@ -612,6 +633,7 @@ header {
       margin-bottom: 4em; } }
   @media screen and (max-width: 700px) {
     .intro {
+      background-image: url("images/alex-small.jpg");
       background-position: center top; } }
   .intro h1 {
     text-align: center;
@@ -622,7 +644,7 @@ header {
     text-shadow: 0 0 10px #FFFFFF; }
     @media screen and (max-width: 700px) {
       .intro h1 {
-        height: 450px;
+        height: 330px;
         margin-bottom: 0; } }
   .intro img {
     float: left;
@@ -654,25 +676,65 @@ header {
         overflow: hidden; } }
   .intro .decorazioni {
     padding-right: 20%; }
-    .intro .decorazioni h2, .intro .decorazioni .button {
+    .intro .decorazioni h2 {
       color: #c64f49;
       font-weight: bold; }
+    .intro .decorazioni a {
+      color: #c64f49; }
+    .intro .decorazioni .button {
+      color: #c64f49;
+      border-color: #c64f49; }
+    .intro .decorazioni .button:hover, .intro .decorazioni .button:focus {
+      color: white;
+      background-color: #c64f49; }
   .intro .kustomite {
     padding-left: 20%; }
-    .intro .kustomite h2, .intro .kustomite .button {
+    .intro .kustomite h2 {
       color: #fd8654;
       font-weight: bold; }
+    .intro .kustomite a {
+      color: #fd8654; }
+    .intro .kustomite .button {
+      color: #fd8654;
+      border-color: #fd8654; }
+    .intro .kustomite .button:hover, .intro .kustomite .button:focus {
+      color: white;
+      background-color: #fd8654; }
+
+.decorazioni h2 {
+  color: #c64f49;
+  font-weight: bold; }
+.decorazioni a {
+  color: #c64f49; }
+.decorazioni .button {
+  color: #c64f49;
+  border-color: #c64f49; }
+.decorazioni .button:hover, .decorazioni .button:focus {
+  color: white;
+  background-color: #c64f49; }
+
+.kustomite h2 {
+  color: #fd8654;
+  font-weight: bold; }
+.kustomite a {
+  color: #fd8654; }
+.kustomite .button {
+  color: #fd8654;
+  border-color: #fd8654; }
+.kustomite .button:hover, .kustomite .button:focus {
+  color: white;
+  background-color: #fd8654; }
 
 @media screen and (min-width: 1240px) {
   .aside {
-    min-height: 100vh;
-    background-color: black; }
+    min-height: 100vh; }
     .aside.left {
       float: left;
       width: 25%;
       height: 100vh;
       overflow-y: scroll;
-      margin-top: -100px; }
+      margin-top: -100px;
+      background-color: black; }
     .aside.right {
       float: right;
       width: 75%; } }
@@ -702,7 +764,8 @@ header {
     width: 50%;
     padding-bottom: 50%;
     background-color: grey;
-    overflow: hidden; }
+    overflow: hidden;
+    border: 1px solid grey; }
   .tiles img {
     position: absolute;
     top: 0;
@@ -743,6 +806,11 @@ header {
     .tiles li {
       width: 20%;
       padding-bottom: 20%;
+      margin: 0; } }
+  @media screen and (max-width: 700px) {
+    .tiles li {
+      width: 50%;
+      padding-bottom: 50%;
       margin: 0; } }
 
 .thumbs img {

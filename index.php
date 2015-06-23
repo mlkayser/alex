@@ -1,43 +1,42 @@
 <?php require('header.php'); ?>
 
 <div class="page-wrapper home">
-   <div class="aside right">
-      
+   <div class="aside right">    
       <section id="slider" class="slider">
         <ul>
-            <li class="slide">
+            <li class="slide decorazioni">
                <img src="images/slides/mauritius.jpg" alt="Mauritius, Elba - Trompe L'Oeil dipinto a mano" />
                <a href="" class="button">Trompe L'Oeil</a>
             </li>
-            <li class="slide">
+            <li class="slide decorazioni">
                <img src="images/slides/sansone.jpg" alt="Spiaggia di Sansone, Elba - Murales dipinto a mano" />
                <a href="" class="button">Murales</a>
             </li>
-            <li class="slide">
+            <li class="slide decorazioni">
                <img src="images/slides/bacco.jpg" alt="Bacco, Elba - Affresco" />
                <a href="" class="button">Affreschi</a>
             </li>
-            <li class="slide">
+            <li class="slide decorazioni">
                <img src="images/slides/portico-deco.jpg" alt="Portico Deco, Elba - Ornamento" />
                <a href="" class="button">Ornamenti</a>
             </li>
-            <li class="slide">
+            <li class="slide decorazioni">
                <img src="images/slides/samantha-and-spirit.jpg" alt="Samantha & Spirit- Dipinto su Commissione" />
                <a href="" class="button">Dipinti</a>
             </li>
-            <li class="slide">
+            <li class="slide decorazioni">
                <img src="images/slides/mobile-pappagalli.jpg" alt="Pappagalli - Decorazioni su Mobili" />
                <a href="" class="button">Decorazioni su Mobili</a>
             </li>
-            <li class="slide">
+            <li class="slide kustomite">
                <img src="images/slides/denim-rebel.jpg" alt="Harley Davidson Denim Rebel- Aerogfafie su Auto e Moto" />
                <a href="" class="button">Aerografie su Auto e Moto</a>
             </li>
-            <li class="slide">
+            <li class="slide kustomite">
                <img src="images/slides/casco-don.jpg" alt="Casco Don Alberto - Aerografie su Caschi" />
                <a href="" class="button">Aerografie su Caschi</a>
             </li>
-            <li class="slide">
+            <li class="slide kustomite">
                <img src="images/slides/eagles.jpg" alt="Eagles - Aerografie su Giubbotti e Tshirts" />
                <a href="" class="button">Aerografie su Giubbotti e Tshirts</a>
             </li>
@@ -47,8 +46,7 @@
             </li>
          </ul>
          
-      </section>
-      
+      </section>      
       <section id="intro" class="intro">
          <div class="wrapper">
             <h1><a href="">Un artista, due linguaggi</a></h1>
@@ -66,7 +64,6 @@
             </div>
          </div>
       </section>   
-
    </div>
       
    <section id="tiles" class="tiles">

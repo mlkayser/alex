@@ -162,19 +162,74 @@ header {
    }
    .decorazioni {
       padding-right:20%;
-      h2, .button {color:#c64f49; font-weight:bold;}
-
+      
+      h2 {
+         color:$decorazioni-color; 
+         font-weight:bold;
+      }
+      a {color:$decorazioni-color; }
+      .button {
+         color:$decorazioni-color;
+         border-color:$decorazioni-color;
+      }
+      .button:hover, .button:focus {
+         color:white;
+         background-color:$decorazioni-color;
+      }
    }
    .kustomite {
       padding-left:20%;
-      h2, .button {color:#fd8654; font-weight:bold}
+      
+      h2 {
+         color:$kustomite-color; 
+         font-weight:bold;
+      }
+      a {color:$kustomite-color;}
+      .button {
+         color:$kustomite-color;
+         border-color:$kustomite-color;
+      }
+      .button:hover, .button:focus {
+         color:white;
+         background-color:$kustomite-color;
+      }
+   }
+}
+
+.decorazioni {
+   h2 {
+      color:$decorazioni-color; 
+      font-weight:bold;
+   }
+   a {color:$decorazioni-color; }
+   .button {
+      color:$decorazioni-color;
+      border-color:$decorazioni-color;
+   }
+   .button:hover, .button:focus {
+      color:white;
+      background-color:$decorazioni-color;
+   }
+}
+.kustomite {
+   h2 {
+      color:$kustomite-color; 
+      font-weight:bold;
+   }
+   a {color:$kustomite-color;}
+   .button {
+      color:$kustomite-color;
+      border-color:$kustomite-color;
+   }
+   .button:hover, .button:focus {
+      color:white;
+      background-color:$kustomite-color;
    }
 }
 
 .aside {
     @media screen and (min-width: $large) {      
-      min-height:100vh;
-      background-color:black;
+      min-height:100vh;      
        
       &.left {
          float:left;
@@ -182,6 +237,7 @@ header {
          height:100vh;
          overflow-y:scroll;
          margin-top:-$header-space;
+         background-color:black;
       }
       &.right {
          float:right;
@@ -221,6 +277,7 @@ header {
       //margin-right:1%; margin-bottom:1%;
       background-color:grey;
       overflow:hidden;
+      border:1px solid grey;
    }
    img {
        position: absolute;

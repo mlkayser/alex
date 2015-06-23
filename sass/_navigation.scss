@@ -21,29 +21,30 @@ h1, h2 {
    padding:.5em 2em;
    margin-top:1em;
    border:5px double #c64f49;
-   border:2px solid #c64f49;
+   border:1px solid $link-color;
    background-color:white;
-   color:#c64f49;
+   color:$link-color;
    text-decoration:none;
    //font-family: 'Julius Sans One', sans-serif;
    font-weight:bold;
    text-transform:uppercase;
-   @include box-shadow(0 0 10px #000000); 
+   //@include box-shadow(0 0 10px #000000); 
    
    &:hover, &:focus {
-      @include box-shadow(none);
+      //@include box-shadow(none);
       text-decoration:none !important;
+      background-color:$link-color;
+      color:white;
    }
 }
 
 .navigation {
    padding:1em;
-   background-color:rgba(black,.3);
+   background-color:rgba(black,.8);
    
    @media screen and (max-width: $small) {
       //display:none;
    }
-
    
    @media screen and (max-width: 850px) {
       font-size:.8em;

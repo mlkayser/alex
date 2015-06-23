@@ -1,0 +1,18 @@
+.post, .page {
+   img {
+      border:1px solid grey;
+   }
+   
+   div {
+      //overflow:hidden;
+   }
+}
+
+.alignright {
+   float:right; 
+   margin-left:$spacing; margin-bottom:$spacing;   
+}
+.alignleft {
+   float:left; 
+   margin-right:$spacing; margin-bottom:$spacing;   
+}
